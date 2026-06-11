@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OIBSIP Level 1 Task 3 — Advanced Temperature Converter with real-time multi-unit output." />
+  <title>ThermoFlux | Advanced Temperature Converter</title>
+
+  <!-- Typography: geometric sans for cyber-minimal aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Ambient background layers -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__orb ambient__orb--cyan"></div>
+    <div class="ambient__orb ambient__orb--violet"></div>
+    <div class="ambient__scanline"></div>
+  </div>
+
+  <main class="app">
+    <header class="app__header">
+      <div class="brand">
+        <span class="brand__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4v20M12 8h8M12 12h8M12 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="16" cy="26" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 22v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="brand__text">
+          <h1 class="brand__title">ThermoFlux</h1>
+          <p class="brand__subtitle">ANJANA KS . OIBSIP</p>
+        </div>
+      </div>
+      <p class="app__tagline">Precision thermal conversion across Celsius, Fahrenheit &amp; Kelvin</p>
+    </header>
+
+    <section class="converter glass" aria-labelledby="converter-heading">
+      <h2 id="converter-heading" class="sr-only">Temperature Converter</h2>
+
+      <!-- Input group with validation feedback -->
+      <div class="field" id="temperature-field">
+        <label class="field__label" for="temperature-input">
+          <span class="field__label-text">Enter Temperature</span>
+          <span class="field__label-hint">Numeric values only</span>
+        </label>
+
+        <div class="field__control" id="input-wrapper">
+          <input
+            type="text"
+            inputmode="decimal"
+            id="temperature-input"
+            class="field__input"
+            placeholder="0.00"
+            autocomplete="off"
+            spellcheck="false"
+            aria-describedby="input-error"
+            aria-invalid="false"
+          />
+          <span class="field__unit-badge" id="input-unit-badge" aria-live="polite">°C</span>
+        </div>
+
+        <!-- Inline validation badge — no browser alerts -->
+        <div class="field__error" id="input-error" role="alert" aria-live="assertive" hidden>
+          <span class="field__error-icon" aria-hidden="true">!</span>
+          <span class="field__error-text" id="error-message"></span>
+        </div>
+      </div>
+
+      <!-- Custom segmented unit selector -->
+      <fieldset class="unit-selector" id="unit-selector">
+        <legend class="unit-selector__legend">Source Unit</legend>
+        <div class="unit-selector__track" role="radiogroup" aria-label="Select source temperature unit">
+          <button type="button" class="unit-selector__option is-active" data-unit="celsius" role="radio" aria-checked="true">
+            <span class="unit-selector__symbol">°C</span>
+            <span class="unit-selector__name">Celsius</span>
+          </button>
+          <button type="button" class="unit-selector__option" data-unit="fahrenheit" role="radio" aria-checked="false">
+            <span class="unit-selector__symbol">°F</span>
+            <span class="unit-selector__name">Fahrenheit</span>
+          </button>
+          <button type="button" class="unit-selector__option" data-unit="kelvin" role="radio" aria-checked="false">
+            <span class="unit-selector__symbol">K</span>
+            <span class="unit-selector__name">Kelvin</span>
+          </button>
+          <span class="unit-selector__indicator" id="unit-indicator" aria-hidden="true"></span>
+        </div>
+      </fieldset>
+
+      <!-- Convert action -->
+      <button type="button" class="btn-convert" id="convert-btn">
+        <span class="btn-convert__glow" aria-hidden="true"></span>
+        <span class="btn-convert__text">Convert</span>
+        <span class="btn-convert__arrow" aria-hidden="true">→</span>
+      </button>
+    </section>
+
+    <!-- Results grid — displays BOTH other units simultaneously -->
+    <section class="results" id="results-section" aria-labelledby="results-heading" hidden>
+      <h2 id="results-heading" class="results__heading">
+        <span class="results__heading-dot" aria-hidden="true"></span>
+        Conversion Output
+      </h2>
+
+      <div class="results__grid" id="results-grid">
+        <!-- Cards injected dynamically by app.js -->
+      </div>
+    </section>
+
+    <footer class="app__footer">
+      <p><strong>Designed & Developed by <b> ANJANA KS</b></strong></p>
+    </footer>
+  </main>
+
+  <script src="js/converter.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
