@@ -19,7 +19,7 @@ ThermoFlux is a sleek, dark-themed temperature converter that transforms a singl
 
 | Resource | Link |
 |----------|------|
-| **Live Demo** | _[Add your deployed URL here — e.g. GitHub Pages]_ |
+| **Live Demo** | https://anjana-ks.github.io/OIBSIP/Anjanaks_Task3/ |
 | **Video Explanation** | _[Add your Loom/YouTube/Drive link here]_ |
 
 ---
@@ -134,9 +134,9 @@ npx serve .
 
 ## Author
 
-**[Your Name]**  
+**Anjana KS**  
 Oasis Infobyte SIP Intern · Level 1  
-GitHub: _[Your GitHub Profile URL]_
+GitHub: https://github.com/anjana-ks
 
 ---
 
