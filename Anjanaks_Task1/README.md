@@ -6,6 +6,15 @@ Built as a static landing page for **Oasis Infobyte — Level 1, Task 1** (Web D
 
 ---
 
+## Live Demo & Video
+
+| Resource | Link |
+|----------|------|
+| **Live Demo** | https://anjana-ks.github.io/OIBSIP/Anjanaks_Task1/ |
+| **Video Explanation** | _[Add your Loom/YouTube/Drive link here]_ |
+
+---
+
 ## Tech Highlights
 
 This project is engineered for clarity, performance, and submission readiness — with zero dependencies and no UI frameworks.
