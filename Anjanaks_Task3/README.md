@@ -11,7 +11,7 @@
 
 ## Overview
 
-ThermoFlux is a sleek, dark-themed temperature converter that transforms a single input value into **both** remaining temperature units simultaneously. Designed with a **Futuristic Cyber-Minimalism** aesthetic — glassmorphic panels, glowing cyan/violet accents, and fluid micro-interactions — it delivers a polished, stand-out experience for OIBSIP Level 1, Task 3.
+ThermoFlux is a sleek, dark-themed temperature converter that transforms a single input value into **both** remaining temperature units simultaneously. Designed with a **Futuristic Cyber-Minimalism** aesthetic — glassmorphic panels, glowing cyan/violet accents, and fluid micro-interactions 
 
 ---
 
