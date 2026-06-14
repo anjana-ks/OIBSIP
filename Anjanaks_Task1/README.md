@@ -2,8 +2,6 @@
 
 > **Inspiration, sorted by shade.** A minimalist, Pinterest-inspired visual moodboard hub where objects, architecture, nature, and design fragments are grouped by cohesive color palettes and aesthetic vibes.
 
-Built as a static landing page for **Oasis Infobyte — Level 1, Task 1** (Web Development Internship).
-
 ---
 
 ## Live Demo & Video
@@ -217,7 +215,7 @@ Then visit `http://localhost:8000`.
 4. Your live URL:
 
    ```
-   https://YOUR_USERNAME.github.io/oibsip/anjanaks_task1/
+   https://anjana-ks.github.io/oibsip/anjanaks_task1/
    ```
 
 ---
