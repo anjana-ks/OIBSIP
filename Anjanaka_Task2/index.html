@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjana K S — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background decorative layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--one" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--two" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">AKS<span class="nav__brand-dot">.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#timeline">Journey</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="eyebrow">// Computer Science &amp; Engineering — Data Science</p>
+        <h1 class="hero__title">
+          Anjana<br />
+          <span class="hero__title-accent">K S</span>
+        </h1>
+        <p class="hero__desc">
+          A results-driven tech enthusiast and full-stack developer specializing in Data Science.
+          Dedicated to engineering smart solutions, collaborating on innovative web applications,
+          and building a professional trajectory with industry-leading IT organizations.
+        </p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--primary">Explore Projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="portrait-frame">
+          <div class="portrait-frame__ring"></div>
+          <img
+            src="portrait.jpeg"
+            alt="Portrait of Anjana K S"
+            class="portrait-frame__img"
+          />
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-label">Status</span>
+          <span class="hero__badge-value"><i class="pulse-dot"></i> Open to Internships</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CONTACT STRIP -->
+    <div class="quick-strip" aria-label="Quick contact details">
+      <a href="mailto:anjanaks233@gmail.com" class="quick-strip__item">
+        <span class="quick-strip__icon">✉</span> anjanaks233@gmail.com
+      </a>
+      <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="quick-strip__item">
+        <!-- Official GitHub Vector Logo -->
+        <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true" style="margin-right: 2px; vertical-align: middle;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        github.com/anjana-ks
+      </a>
+      <a href="https://www.instagram.com/an.janak?igsh=d3o5NndmZXFvZ3d1" target="_blank" rel="noopener noreferrer" class="quick-strip__item">
+        <!-- Official Instagram Vector Logo -->
+        <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true" style="margin-right: 2px; vertical-align: middle;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        @an.janak
+      </a>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2 class="section__title">About Me</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="glass-card about__card about__card--edu">
+          <h3 class="about__heading">Education</h3>
+          <p class="about__primary">
+            B.Tech in Computer Science Engineering (Data Science)
+          </p>
+          <p class="about__secondary">
+            Christ College of Engineering, Irinjalakuda<br />
+            Affiliated to APJ Abdul Kalam Technological University
+          </p>
+
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-value">8.15</span>
+              <span class="about__stat-label">Current CGPA</span>
+            </div>
+            <div class="about__stat-divider" aria-hidden="true"></div>
+            <div class="about__stat">
+              <span class="about__stat-value">98%</span>
+              <span class="about__stat-label">Class X</span>
+            </div>
+            <div class="about__stat-divider" aria-hidden="true"></div>
+            <div class="about__stat">
+              <span class="about__stat-value">93%</span>
+              <span class="about__stat-label">Class XII</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card about__card about__card--values">
+          <h3 class="about__heading">Core Values</h3>
+          <ul class="values-list">
+            <li>
+              <span class="values-list__tag">01</span>
+              <div>
+                <strong>Teamwork</strong>
+                <p>Thrives in collaborative environments, building on shared ideas to ship better outcomes.</p>
+              </div>
+            </li>
+            <li>
+              <span class="values-list__tag">02</span>
+              <div>
+                <strong>Critical Problem Solving</strong>
+                <p>Breaks down complex challenges into structured, data-informed solutions.</p>
+              </div>
+            </li>
+            <li>
+              <span class="values-list__tag">03</span>
+              <div>
+                <strong>Adaptive Leadership</strong>
+                <p>Leads with flexibility — adjusting approach to fit the team and the task at hand.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <h2 class="section__title">Skills Architecture</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skills__category">
+          <h3 class="skills__category-title">Programming Languages</h3>
+          <div class="skills__grid">
+            <div class="tech-card">
+              <span class="tech-card__icon">Py</span>
+              <span class="tech-card__name">Python</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Jv</span>
+              <span class="tech-card__name">Java</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">C</span>
+              <span class="tech-card__name">C</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">C++</span>
+              <span class="tech-card__name">C++</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">JS</span>
+              <span class="tech-card__name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title">Frameworks &amp; Libraries</h3>
+          <div class="skills__grid">
+            <div class="tech-card">
+              <span class="tech-card__icon">⚛</span>
+              <span class="tech-card__name">React</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Fa</span>
+              <span class="tech-card__name">FastAPI</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Fl</span>
+              <span class="tech-card__name">Flask</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Sb</span>
+              <span class="tech-card__name">Spring Boot</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Bs</span>
+              <span class="tech-card__name">Bootstrap</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">H5</span>
+              <span class="tech-card__name">HTML5</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">C3</span>
+              <span class="tech-card__name">CSS3</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">ES6+</span>
+              <span class="tech-card__name">Modern JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title">Databases &amp; Tools</h3>
+          <div class="skills__grid">
+            <div class="tech-card">
+              <span class="tech-card__icon">Pg</span>
+              <span class="tech-card__name">PostgreSQL</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">My</span>
+              <span class="tech-card__name">MySQL</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Gt</span>
+              <span class="tech-card__name">Git</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Jd</span>
+              <span class="tech-card__name">JDBC</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">Xl</span>
+              <span class="tech-card__name">MS Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title">Core Concepts</h3>
+          <div class="skills__grid">
+            <div class="tech-card">
+              <span class="tech-card__icon">DS</span>
+              <span class="tech-card__name">Data Structures</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">OOP</span>
+              <span class="tech-card__name">OOP</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">DB</span>
+              <span class="tech-card__name">DBMS</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">API</span>
+              <span class="tech-card__name">REST APIs</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">JWT</span>
+              <span class="tech-card__name">JWT Auth</span>
+            </div>
+            <div class="tech-card">
+              <span class="tech-card__icon">CR</span>
+              <span class="tech-card__name">CRUD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category">
+          <h3 class="skills__category-title">Core Strengths</h3>
+          <div class="skills__grid skills__grid--wide">
+            <div class="tech-card tech-card--wide">
+              <span class="tech-card__icon">⌬</span>
+              <span class="tech-card__name">Teamwork</span>
+            </div>
+            <div class="tech-card tech-card--wide">
+              <span class="tech-card__icon">⌖</span>
+              <span class="tech-card__name">Technical Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <div class="section__head">
+        <h2 class="section__title">Experience Timeline</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__date">November 2024</span>
+            <h3 class="timeline__title">Student Enrichment Program — Robotics &amp; IoT</h3>
+            <p class="timeline__desc">
+              Engaged in an enrichment program exploring foundational concepts in robotics and
+              the Internet of Things through practical sessions.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__date">Innosparks 2.0</span>
+            <h3 class="timeline__title">Ideathon Participant</h3>
+            <p class="timeline__desc">
+              Pitched and presented a gamified learning platform concept to a panel of
+              evaluators as part of an institutional ideathon.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__date">HackQuest '25</span>
+            <h3 class="timeline__title">Hackathon Participant — Teachers Connect</h3>
+            <p class="timeline__desc">
+              Built an offline-first AI assistant for rural education within a 24-hour
+              national hackathon, designing around connectivity and language barriers.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__date">Kinetic Art</span>
+            <h3 class="timeline__title">Event Coordinator</h3>
+            <p class="timeline__desc">
+              Managed end-to-end logistics for a gaming PC and supercomputer expo, coordinating
+              vendors, layout, and on-ground operations.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="glass-card timeline__card">
+            <span class="timeline__date">Industrial Exposure</span>
+            <h3 class="timeline__title">ISRO · KSUM · Srishti Innovative · EY Kochi · UST Global</h3>
+            <p class="timeline__desc">
+              Gained first-hand exposure to industry and research environments across leading
+              organizations, building perspective on real-world engineering practice.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="achievements">
+        <h3 class="achievements__title">Achievements &amp; Certifications</h3>
+        <div class="achievements__grid">
+          <div class="glass-card achievement-card">
+            <span class="achievement-card__icon">◆</span>
+            <div>
+              <strong>NPTEL — Python for Data Science</strong>
+              <p>Elite Certification</p>
+            </div>
+          </div>
+          <div class="glass-card achievement-card">
+            <span class="achievement-card__icon">◆</span>
+            <div>
+              <strong>Introduction to MS Excel</strong>
+              <p>Microsoft · Simplilearn SkillUp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section__head">
+        <h2 class="section__title">Work &amp; Internship Projects</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__placeholder">
+              <span>Oasis Infobyte<br />Web Development Tasks</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                View on GitHub
+                <span class="project-card__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Internship · Level 1</span>
+            <h3 class="project-card__title">Oasis Infobyte Internship</h3>
+            <p class="project-card__desc">
+              A series of responsive web development tasks completed as part of the program, covering front-end fundamentals and modern UI layouts.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__placeholder project-card__placeholder--alt">
+              <span>Smart Inventory</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                View on GitHub
+                <span class="project-card__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Full-Stack · React + FastAPI</span>
+            <h3 class="project-card__title">Smart Inventory Platform</h3>
+            <p class="project-card__desc">
+              A full-stack inventory system with secure role-based authentication, real-time
+              stock tracking, and PostgreSQL backend configurations.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__placeholder">
+              <span>UAAT</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                View on GitHub
+                <span class="project-card__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Java Swing · MySQL</span>
+            <h3 class="project-card__title">UAAT Academic Assistant</h3>
+            <p class="project-card__desc">
+              A desktop application for academic automation with an integrated note management module, presented at Codescape Expo 2025.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__placeholder project-card__placeholder--alt">
+              <span>Teachers Connect</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                View on GitHub
+                <span class="project-card__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">HackQuest '25 · Hackathon</span>
+            <h3 class="project-card__title">Teachers Connect Assistant</h3>
+            <p class="project-card__desc">
+              An AI assistant built for rural educators designed to function with limited data accessibility, addressing local communication constraints.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__placeholder">
+              <span>GreenTrack</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                View on GitHub
+                <span class="project-card__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Web App</span>
+            <h3 class="project-card__title">GreenTrack Optimizer</h3>
+            <p class="project-card__desc">
+              A clean web application that monitors environmental parameters and usage patterns to encourage highly efficient consumer habits.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media">
+            <div class="project-card__placeholder project-card__placeholder--alt">
+              <span>Portfolio Website</span>
+            </div>
+            <div class="project-card__overlay">
+              <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                View on GitHub
+                <span class="project-card__arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Task 2</span>
+            <h3 class="project-card__title">Personal Developer Portfolio</h3>
+            <p class="project-card__desc">
+              A fully custom, clean semantic portfolio constructed using component-focused designs, layout frameworks, and responsive interaction logic.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <h2 class="section__title">Get in Touch</h2>
+      </div>
+
+      <div class="contact">
+        <form class="glass-card contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Email</label>
+          </div>
+          <div class="field">
+            <input type="text" id="subject" name="subject" placeholder=" " required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="btn btn--primary contact__submit">
+            Send Message
+          </button>
+          <p class="contact__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__info">
+          <div class="glass-card contact__info-card">
+            <h3 class="about__heading">Let's build something</h3>
+            <p class="about__secondary">
+              Whether it's an internship opportunity, collaboration, or just a tech conversation —
+              my inbox is always open.
+            </p>
+            <a href="mailto:anjanaks233@gmail.com" class="contact__email">anjanaks233@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__name">Anjana K S</span>
+        <span class="footer__tag">CSE (Data Science) Student</span>
+      </div>
+
+      <div class="footer__socials">
+        <a href="mailto:anjanaks233@gmail.com" class="social-link" aria-label="Gmail">
+          <span class="social-link__icon">✉</span>
+          <span class="social-link__label">Gmail</span>
+        </a>
+        
+        <a href="https://github.com/anjana-ks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <!-- Real GitHub Icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true" style="color: var(--accent);"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span class="social-link__label">GitHub</span>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/anjana-k-s-26352632a" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <span class="social-link__icon">in</span>
+          <span class="social-link__label">LinkedIn</span>
+        </a>
+        
+        <a href="https://www.instagram.com/an.janak?igsh=d3o5NndmZXFvZ3d1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+          <!-- Real Instagram Icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true" style="color: var(--accent);"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          <span class="social-link__label">Instagram</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Anjana K S. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
